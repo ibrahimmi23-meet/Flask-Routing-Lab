@@ -16,7 +16,10 @@ def hello_world():
 @app.route('/product')
 def product ():
     return render_template('product.html')
-
+@app.route("/cart")
+def cart():
+    return render_template("cart.html")
+    
 
 
 # Your code should be above
